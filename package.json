@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "seedTestData": "rm -f *.test.sqlite3 && sequelize-cli db:migrate && sequelize-cli db:seed:all",
-    "test": "NODE_ENV=test npm run seedTestData && npx jest",
+    "test": "jest",
     "lint": "eslint ."
   },
   "keywords": [],
